@@ -33,26 +33,26 @@ A live public deployment of this template is available at [https://openapi-templ
 ## Setup Steps
 
 1. Install the project dependencies with a package manager of your choice:
-   ```bash
-   npm install
-   ```
+    ```bash
+    npm install
+    ```
 2. Create a [D1 database](https://developers.cloudflare.com/d1/get-started/) with the name "openapi-template-db":
-   ```bash
-   npx wrangler d1 create openapi-template-db
-   ```
-   ...and update the `database_id` field in `wrangler.json` with the new database ID.
+    ```bash
+    npx wrangler d1 create openapi-template-db
+    ```
+    ...and update the `database_id` field in `wrangler.json` with the new database ID.
 3. Run the following db migration to initialize the database (notice the `migrations` directory in this project):
-   ```bash
-   npx wrangler d1 migrations apply DB --remote
-   ```
+    ```bash
+    npx wrangler d1 migrations apply DB --remote
+    ```
 4. Deploy the project!
-   ```bash
-   npx wrangler deploy
-   ```
+    ```bash
+    npx wrangler deploy
+    ```
 5. Monitor your worker
-   ```bash
-   npx wrangler tail
-   ```
+    ```bash
+    npx wrangler tail
+    ```
 
 ## Testing
 
